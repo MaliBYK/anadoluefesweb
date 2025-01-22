@@ -4,14 +4,15 @@ import { Button } from "@/components/ui/button"
 
 export default function Fundraisers() {
   const causes = [
-    { name: "Plant a Tree", icon: TreeDeciduous, description: "Help us plant trees and combat climate change" },
-    { name: "Feed the Paws", icon: Paw, description: "Provide food for shelter animals" },
+    { name: "Ağaç Dikin", icon: TreeDeciduous, description: "Ağaç dikmemize ve iklim değişikliğiyle mücadele etmemize yardımcı olun" },
+    { name: "Patileri Besleyin", icon: Paw, description: "Barınak hayvanlarına yiyecek sağlayın" },
   ]
 
   return (
-    <section id="fundraisers" className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">Support a Cause</h2>
-      <div className="grid md:grid-cols-2 gap-4">
+    <section id="fundraisers" className="mb-8 relative">
+      <div className="absolute inset-0 bg-gray-100 opacity-50 z-0" />
+      <h2 className="text-2xl font-bold mb-4 relative z-10">Bir Amacı Destekleyin</h2>
+      <div className="grid md:grid-cols-2 gap-4 relative z-10">
         {causes.map((cause, index) => (
           <Card key={index}>
             <CardHeader>
@@ -21,7 +22,7 @@ export default function Fundraisers() {
             </CardHeader>
             <CardContent>
               <CardDescription className="mb-4">{cause.description}</CardDescription>
-              <Button className="bg-[#1B3F8B] hover:bg-[#00A3E0] text-white">Donate Now</Button>
+              <Button className="bg-[#1B3F8B] hover:bg-[#00A3E0] text-white">Şimdi Bağış Yap</Button>
             </CardContent>
           </Card>
         ))}
@@ -29,4 +30,3 @@ export default function Fundraisers() {
     </section>
   )
 }
-

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ShoppingBasketIcon as Basketball, Trophy, Star } from "lucide-react"
+import { ShoppingBasketIcon as Basketbol, Trophy, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BackgroundPattern } from "./BackgroundPattern"
@@ -9,17 +9,17 @@ import { BackgroundPattern } from "./BackgroundPattern"
 const players = [
   {
     name: "Shane Larkin",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/larkin.jpg?height=200&width=200",
     stats: { ppg: "15.5", apg: "4.5", spg: "1.8" },
   },
   {
     name: "Vasilije Micic",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/micic.jpg?height=200&width=200",
     stats: { ppg: "16.3", apg: "5.2", spg: "1.5" },
   },
   {
     name: "Bryant Dunston",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/dunston.jpeg?height=200&width=200",
     stats: { ppg: "8.7", apg: "1.2", spg: "0.8" },
   },
 ]
@@ -45,8 +45,8 @@ export default function AnatolianEfesli() {
       <BackgroundPattern />
       <div className="relative space-y-6">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold text-[#1B3F8B]">ANATOLIAN EFESLI LET'S TRAIN</h1>
-          <p className="text-xl italic text-gray-600">"Train like a champion, play like an Efesli!"</p>
+          <h1 className="text-4xl font-bold text-[#1B3F8B]">ANADOLU EFESLİ HAYDİ ANTRENMAN</h1>
+          <p className="text-xl italic text-gray-600">"Şampiyon gibi çalış, Efesli gibi oyna!"</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mt-8">
@@ -91,10 +91,10 @@ export default function AnatolianEfesli() {
         <div className="text-center space-y-6 mt-8">
           <div className="inline-flex items-center space-x-2 text-2xl font-bold">
             <Trophy className="w-8 h-8 text-[#00A3E0]" />
-            <span>Score: {score}</span>
+            <span>Skor: {score}</span>
           </div>
           <div className="space-y-4">
-            <p className="text-xl">Playing as: {selectedPlayer.name}</p>
+            <p className="text-xl">Oynayan: {selectedPlayer.name}</p>
             <Button
               onClick={shootBasket}
               disabled={isAnimating}
@@ -103,8 +103,8 @@ export default function AnatolianEfesli() {
                 isAnimating ? "animate-bounce" : ""
               }`}
             >
-              <Basketball className={`mr-2 ${isAnimating ? "animate-spin" : ""}`} />
-              Shoot Basket
+              <Basketbol className={`mr-2 ${isAnimating ? "animate-spin" : ""}`} />
+              Basket At
             </Button>
           </div>
         </div>
@@ -112,11 +112,10 @@ export default function AnatolianEfesli() {
         <div className="mt-8 text-center">
           <div className="inline-flex items-center space-x-2">
             <Star className="w-6 h-6 text-yellow-500" />
-            <p className="text-gray-600">Unlock achievements by scoring more points!</p>
+            <p className="text-gray-600">Daha fazla puan toplayarak başarımlar kazan!</p>
           </div>
         </div>
       </div>
     </div>
   )
 }
-

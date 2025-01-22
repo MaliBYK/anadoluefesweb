@@ -7,30 +7,30 @@ export default function Header() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <Link href="/" className="flex items-center space-x-2 mb-4 md:mb-0">
           <Beer size={24} />
-          <span className="text-xl font-bold">Ephesus Experience</span>
+          <span className="text-xl font-bold">Efes Deneyimi</span>
         </Link>
         <nav>
           <ul className="flex flex-wrap justify-center md:space-x-4">
             <li className="m-2 md:m-0">
-              <Link href="/pairing">AI Food Pairing</Link>
+              <Link href="/pairing">Bira ve Meze Eşleştirme</Link>
             </li>
             <li className="m-2 md:m-0">
-              <Link href="/roulette">Beer Roulette</Link>
+              <Link href="/roulette">Bira Çarkı</Link>
             </li>
             <li className="m-2 md:m-0">
-              <Link href="/events">Events</Link>
+              <Link href="/events">Etkinlikler ve İndirimler</Link>
             </li>
             <li className="m-2 md:m-0">
-              <Link href="/games">Games</Link>
+              <Link href="/games">Arkadaşlarla Eğlence</Link>
             </li>
             <li className="m-2 md:m-0">
-              <Link href="/forum">Forum</Link>
+              <Link href="/forum">Deneyim Paylaşımı</Link>
             </li>
             <li className="m-2 md:m-0">
-              <Link href="/fundraisers">Fundraisers</Link>
+              <Link href="/fundraisers">Destek Kampanyaları</Link>
             </li>
             <li className="m-2 md:m-0">
-              <Link href="/anatolian-efesli">Anatolian Efesli</Link>
+              <Link href="/anatolian-efesli">Anadolu Efes’le Potaya Doğru!</Link>
             </li>
           </ul>
         </nav>
@@ -38,4 +38,3 @@ export default function Header() {
     </header>
   )
 }
-

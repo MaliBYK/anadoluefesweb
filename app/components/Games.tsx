@@ -3,16 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function Games() {
   const games = [
-    { name: "Beer Taboo", description: "Guess the beer-related word without using certain terms" },
+    { name: "Bira Tabusu", description: "Belirli terimleri kullanmadan bira ile ilgili kelimeyi tahmin et" },
     {
-      name: "Hoppy Word Chain",
-      description: "Create a chain of words, each starting with the last letter of the previous word",
+      name: "Hoppy Kelime Zinciri",
+      description: "Her biri bir önceki kelimenin son harfiyle başlayan kelimelerden oluşan bir zincir oluşturun",
     },
   ]
 
   return (
     <section id="games" className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">Fun Games</h2>
+      <h2 className="text-2xl font-bold mb-4">Eğlenceli Oyunlar</h2>
       <div className="grid md:grid-cols-2 gap-4">
         {games.map((game, index) => (
           <Card key={index}>
@@ -30,4 +30,3 @@ export default function Games() {
     </section>
   )
 }
-

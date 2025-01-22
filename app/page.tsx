@@ -14,53 +14,53 @@ import {
 export default function Home() {
   const sections = [
     {
-      title: "AI Food Pairing",
-      description: "Discover perfect beer and food combinations",
+      title: "Bira ve Meze Eşleştirme",
+      description: "Yapay zeka ile mükemmel bira ve meze eşleşmeleri keşfedin",
       href: "/pairing",
       icon: Utensils,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/birameze.jpg?height=200&width=400",
     },
     {
-      title: "Beer Roulette",
-      description: "Spin the wheel for a random beer selection",
+      title: "Bira Çarkı",
+      description: "Şansınızı deneyin ve rastgele bir bira seçin",
       href: "/roulette",
       icon: Beer,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/biralar.jpg?height=200&width=400",
     },
     {
-      title: "Events",
-      description: "Check out Ephesus-sponsored events",
+      title: "Etkinlikler ve İndirimler",
+      description: "Efes’in sponsor olduğu etkinlikler ve fırsatları keşfedin",
       href: "/events",
       icon: Calendar,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/efeskultur.jpeg?height=200&width=400",
     },
     {
-      title: "Games",
-      description: "Play fun beer-themed games with friends",
+      title: "Arkadaşlarla Eğlence",
+      description: "Minimal oyunlar ve eğlenceli aktivitelerle keyifli zaman geçirin",
       href: "/games",
       icon: Gamepad2,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/funbeer.jpeg?height=200&width=400",
     },
     {
-      title: "Forum",
-      description: "Share your experiences anonymously",
+      title: "Deneyim Paylaşımı",
+      description: "Anonim olarak bira deneyimlerinizi paylaşın",
       href: "/forum",
       icon: MessageSquare,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/forum.jpeg?height=200&width=400",
     },
     {
-      title: "Fundraisers",
-      description: "Support charitable causes",
+      title: "Destek Kampanyaları",
+      description: "Hayır kurumlarına destek olun",
       href: "/fundraisers",
       icon: Heart,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/destek.jpeg?height=200&width=400",
     },
     {
-      title: "Anatolian Efesli",
-      description: "Train like a champion basketball player",
+      title: "Anadolu Efes’le Potaya Doğru!",
+      description: "Şampiyon basketbolcular gibi antrenman yapın",
       href: "/anatolian-efesli",
       icon: Basketball,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/sampiyon.jpg?height=200&width=400",
     },
   ]
 
@@ -70,10 +70,10 @@ export default function Home() {
       <div className="relative">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-[#1B3F8B] sm:text-6xl">
-            Welcome to Ephesus Experience
+            Efes Deneyimine Hoş Geldiniz
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Discover the perfect blend of basketball, beer, and entertainment
+            Basketbol, bira ve eğlencenin mükemmel uyumunu keşfedin
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
@@ -97,7 +97,7 @@ export default function Home() {
                   href={section.href}
                   className="inline-flex items-center text-[#00A3E0] hover:text-[#1B3F8B] hover:underline"
                 >
-                  <span>Explore {section.title}</span>
+                  <span>{section.title} Keşfet</span>
                   <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -110,4 +110,3 @@ export default function Home() {
     </div>
   )
 }
-

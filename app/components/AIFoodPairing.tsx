@@ -5,27 +5,27 @@ export default function AIFoodPairing() {
   const pairings = [
     {
       beer: "Ephesus IPA",
-      appetizer: "Spicy Chicken Wings",
+      appetizer: "Baharatlı Tavuk Kanatları",
       kcal: 450,
-      allergens: ["Gluten", "Soy"],
+      allergens: ["Gluten", "Soya"],
     },
     {
       beer: "Ephesus Stout",
-      appetizer: "Chocolate Truffles",
+      appetizer: "Çikolata Trüfleri",
       kcal: 300,
-      allergens: ["Dairy", "Soy"],
+      allergens: ["Süt", "Soya"],
     },
   ]
 
   return (
     <section id="pairing" className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">AI-Recommended Food Pairings</h2>
+      <h2 className="text-2xl font-bold mb-4">Yapay Zeka Önerili Yemek Eşleşmeleri</h2>
       <div className="grid md:grid-cols-2 gap-4">
         {pairings.map((pairing, index) => (
           <Card key={index}>
             <CardHeader>
               <CardTitle>{pairing.beer}</CardTitle>
-              <CardDescription>Paired with {pairing.appetizer}</CardDescription>
+              <CardDescription>{pairing.appetizer} ile eşleştirildi</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="flex items-center">
@@ -33,7 +33,7 @@ export default function AIFoodPairing() {
               </p>
               <p className="flex items-center mt-2">
                 <AlertTriangle className="mr-2" />
-                Allergens: {pairing.allergens.join(", ")}
+                Alerjenler: {pairing.allergens.join(", ")}
               </p>
             </CardContent>
           </Card>
@@ -42,4 +42,3 @@ export default function AIFoodPairing() {
     </section>
   )
 }
-

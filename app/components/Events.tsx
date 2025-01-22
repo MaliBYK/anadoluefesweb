@@ -6,20 +6,20 @@ import { BackgroundPattern } from "./BackgroundPattern"
 export default function Events() {
   const events = [
     {
-      name: "Summer Jazz Night",
+      name: "Yaz Caz Gecesi",
       date: "2023-07-15",
       time: "20:00",
-      location: "Ephesus Arena",
-      type: "Concert",
-      image: "/placeholder.svg?height=300&width=600",
+      location: "Efes Arena",
+      type: "Konser",
+      image: "/party.jpeg?height=300&width=600",
     },
     {
-      name: "Comedy Club Special",
+      name: "Komedi Kulübü Özel",
       date: "2023-07-22",
       time: "21:00",
-      location: "Ephesus Theater",
-      type: "Theater",
-      image: "/placeholder.svg?height=300&width=600",
+      location: "Efes Tiyatrosu",
+      type: "Tiyatro",
+      image: "/comedy.jpeg?height=300&width=600",
     },
   ]
 
@@ -28,8 +28,8 @@ export default function Events() {
       <BackgroundPattern />
       <div className="relative">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-[#1B3F8B]">Ephesus +1 Events</h1>
-          <p className="mt-4 text-gray-600">Discover exclusive events and get 10% off with your QR code</p>
+          <h1 className="text-4xl font-bold text-[#1B3F8B]">Efes +1 Etkinlikler</h1>
+          <p className="mt-4 text-gray-600">Özel etkinlikleri keşfedin ve QR kodunuzla %10 indirim kazanın</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {events.map((event, index) => (
@@ -62,7 +62,7 @@ export default function Events() {
                   <span>{event.location}</span>
                 </div>
                 <Button className="w-full bg-[#00A3E0] hover:bg-[#1B3F8B] text-white">
-                  <Ticket className="mr-2" /> Get 10% Off
+                  <Ticket className="mr-2" /> %10 İndirim Al
                 </Button>
               </CardContent>
             </Card>
@@ -72,4 +72,3 @@ export default function Events() {
     </div>
   )
 }
-
